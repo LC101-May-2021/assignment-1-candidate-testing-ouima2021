@@ -25,8 +25,9 @@ function askQuestion() {
       let numberingSystem = i + 1 + ") "; 
       candidateAnswers[i] = input.question(numberingSystem + questions[i]);
       console.log(`Your answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
+      candidateAnswers.push(candidateAnswers[i]);
    }
-  //return candidateAnswers;
+  return candidateAnswers.slice(0, -1);
 }
 
 function gradeQuiz(candidateAnswers) {
@@ -50,7 +51,7 @@ console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of 
       console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct) <<<`);
     console.log(`>>> Status: FAILED <<<`);
     }
-//return grade; 
+return grade; 
    }
 
 
