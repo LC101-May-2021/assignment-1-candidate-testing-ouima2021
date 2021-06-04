@@ -26,7 +26,7 @@ function askQuestion() {
       candidateAnswers[i] = input.question(numberingSystem + questions[i]);
       console.log(`Your answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
    }
-  return candidateAnswers;
+  //return candidateAnswers;
 }
 
 function gradeQuiz(candidateAnswers) {
