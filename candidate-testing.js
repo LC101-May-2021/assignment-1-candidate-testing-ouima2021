@@ -38,7 +38,7 @@ for (let i = 0; i < correctAnswers.length; i++){
   
    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) { 
      numOfCorrectAnswers.push(correctAnswers[i]);
-     grade = numOfCorrectAnswers.length / questions.length * 100;
+     grade = (numOfCorrectAnswers.length) / (questions.length) * 100;
   }
  
 }
