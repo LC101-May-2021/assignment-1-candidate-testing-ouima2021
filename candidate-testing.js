@@ -50,7 +50,7 @@ console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of 
       console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct) <<<`);
     console.log(`>>> Status: FAILED <<<`);
     }
-return grade; 
+//return grade; 
    }
 
 
