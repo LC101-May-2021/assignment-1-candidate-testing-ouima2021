@@ -39,10 +39,10 @@ for (let i = 0; i < correctAnswers.length; i++){
    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) { 
      numOfCorrectAnswers.push(correctAnswers[i]);
      grade = (numOfCorrectAnswers.length) / (questions.length) * 100;
-  }
- else if (candidateAnswers[i] !== correctAnswers[i]) {
-   grade = (questions.length) * 0; 
- }
+   }
+   else if (grade === ''){
+     grade = questions.length * 0; 
+   }
 }
 if (grade >= 80) {
 console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct) <<<`);
