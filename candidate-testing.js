@@ -25,8 +25,6 @@ function askQuestion() {
       let numberingSystem = i + 1 + ") "; 
       candidateAnswers[i] = input.question(numberingSystem + questions[i]);
       console.log(`Your answer: ${candidateAnswers[i]} \nCorrect Answer: ${correctAnswers[i]} \n`);
-       
-  
    }
   return candidateAnswers;
 }
@@ -45,11 +43,11 @@ for (let i = 0; i < correctAnswers.length; i++){
  
 }
 if (grade >= 80) {
-console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct <<<`);
+console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct) <<<`);
     console.log(`>>> Status: PASSED <<<`);
     } 
     else {
-      console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct <<<`);
+      console.log(`>>> Overall Grade: ${grade}% (${numOfCorrectAnswers.length} out of ${questions.length} responses correct) <<<`);
     console.log(`>>> Status: FAILED <<<`);
     }
 return grade; 
